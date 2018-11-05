@@ -1,10 +1,18 @@
 ﻿namespace CreationalDesignPatterns.Entities.Singleton
 {
-    public  class SingletonThreadSafe2
+    using System.Diagnostics;
+
+    public class SingletonThreadSafe2
     {
         SingletonThreadSafe2()
         {
         }
+
+        public void DoSomething()
+        {
+            Debug.WriteLine(this.GetHashCode());
+        }
+
         private static readonly object padlock = new object();
         private static SingletonThreadSafe2 instance = null;
         public static SingletonThreadSafe2 Instance
