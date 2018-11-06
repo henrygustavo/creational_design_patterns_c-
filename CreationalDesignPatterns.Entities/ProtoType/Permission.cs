@@ -11,7 +11,7 @@
             Rights = access;
         }
 
-        public virtual object Clone()
+        public  object Clone()
         {
             Permission permission = new Permission(this.Resource, this.Rights);
             return permission;

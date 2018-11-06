@@ -13,7 +13,7 @@ namespace CreationalDesignPatterns.Entities.FactoryMethod.Pizza
 		internal string sauce;
 		internal List<string> toppings = new List<string>();
 
-		internal virtual void Prepare()
+		public  void Prepare()
 		{
 			Debug.WriteLine("Preparing " + name);
 			Debug.WriteLine("Tossing dough...");
@@ -25,22 +25,22 @@ namespace CreationalDesignPatterns.Entities.FactoryMethod.Pizza
 			}
 		}
 
-		internal virtual void Bake()
+	    internal virtual void Bake()
 		{
 			Debug.WriteLine("Bake for 25 minutes at 350");
 		}
 
-		internal virtual void Cut()
+	    internal virtual void Cut()
 		{
 			Debug.WriteLine("Cutting the pizza into diagonal slices");
 		}
 
-		internal virtual void Box()
+	    internal virtual void Box()
 		{
 			Debug.WriteLine("Place pizza in official PizzaStore box");
 		}
 
-		public virtual string Name
+		public  string Name
 		{
 			get
 			{

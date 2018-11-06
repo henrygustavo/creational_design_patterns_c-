@@ -5,7 +5,7 @@ namespace CreationalDesignPatterns.Entities.FactoryMethod.Fecha
 	public class FechasFactory
 	{
 
-		public virtual FechaGenerica ObtenerFecha()
+		public  FechaGenerica ObtenerFecha()
 		{
 
 			ConfiguracionRegional config = ConfiguracionRegional.Instancia;

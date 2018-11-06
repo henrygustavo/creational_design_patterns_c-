@@ -11,12 +11,12 @@ namespace CreationalDesignPatterns.Entities.FactoryMethod.Cars
 
         }
 
-        public virtual void TurnOn()
+        public  void TurnOn()
         {
             Debug.WriteLine("The Mini Cooper is on! 1.6 Liters of brutal force is churning.");
         }
 
-        public virtual void TurnOff()
+        public  void TurnOff()
         {
             Debug.WriteLine("The Mini Cooper is has turned off.");
         }

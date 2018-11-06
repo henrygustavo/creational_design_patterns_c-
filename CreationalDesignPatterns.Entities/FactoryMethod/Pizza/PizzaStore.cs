@@ -8,7 +8,7 @@ namespace CreationalDesignPatterns.Entities.FactoryMethod.Pizza
 
 		internal abstract Pizza CreatePizza(string item);
 
-		public virtual Pizza OrderPizza(string type)
+		public  Pizza OrderPizza(string type)
 		{
 			Pizza pizza = CreatePizza(type);
 			Debug.WriteLine("--- Making a " + pizza.Name + " ---");

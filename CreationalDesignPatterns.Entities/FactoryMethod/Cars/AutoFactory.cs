@@ -50,7 +50,6 @@ namespace CreationalDesignPatterns.Entities.FactoryMethod.Cars
             {
                 if (type.GetInterface(typeof(IAuto).ToString()) != null)
                 {
-                    var t = type.Name.ToLower();
                     autos.Add(type.Name.ToLower(), type);
                 }
             }

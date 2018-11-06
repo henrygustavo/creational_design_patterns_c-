@@ -8,7 +8,7 @@ namespace CreationalDesignPatterns.Entities.FactoryMethod.WebSite
 
 		protected internal IList<Page> pages = new List<Page>();
 
-		public virtual IList<Page> Pages
+		public  IList<Page> Pages
 		{
 			get
 			{

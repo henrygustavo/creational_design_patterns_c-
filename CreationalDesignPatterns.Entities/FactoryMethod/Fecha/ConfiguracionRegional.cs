@@ -10,7 +10,7 @@
 
 		private string region = null;
 
-		public virtual string Region
+		public  string Region
 		{
 			get
 			{
