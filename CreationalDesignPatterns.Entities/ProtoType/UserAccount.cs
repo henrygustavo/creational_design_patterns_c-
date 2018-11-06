@@ -33,23 +33,23 @@
 
             //Deep Copy
 
-            UserAccount account = new UserAccount
-            {
-                UserName = this.UserName,
-                Password = this.Password,
-                FName = this.FName,
-                LName = this.LName
-            };
+            //UserAccount account = new UserAccount
+            //{
+            //    UserName = this.UserName,
+            //    Password = this.Password,
+            //    FName = this.FName,
+            //    LName = this.LName
+            //};
 
-            List<Permission> permissions = new List<Permission>();
-            for (int i = 0; i < permissions.Count; i++)
-            {
-                Permission permission = (Permission) permissions.ElementAt(i).Clone();
-                permissions.Add(permission);
-            }
+            //List<Permission> permissions = new List<Permission>();
+            //for (int i = 0; i < permissions.Count; i++)
+            //{
+            //    Permission permission = (Permission) permissions.ElementAt(i).Clone();
+            //    permissions.Add(permission);
+            //}
 
-            account.Permissions = permissions;
-            return account;
+            //account.Permissions = permissions;
+            //return account;
 
         }
 

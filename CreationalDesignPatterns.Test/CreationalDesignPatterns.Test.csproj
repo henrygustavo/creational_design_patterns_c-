@@ -30,4 +30,8 @@
     <ProjectReference Include="..\CreationalDesignPatterns.Entities\CreationalDesignPatterns.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>
